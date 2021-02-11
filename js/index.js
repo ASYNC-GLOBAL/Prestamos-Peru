@@ -1,0 +1,69 @@
+eventFunction();
+
+function eventFunction() {
+    document.addEventListener("DOMContentLoaded", contador)
+}
+
+function contador() {
+    const counters = document.querySelectorAll('.counter');
+    const speed = 200;
+    let count = 0;
+    counters.forEach(counter => {
+        const updateCount = () => {
+            const target = +counter.getAttribute('data-target');
+            const inc = target / speed;
+            if (count < target) {
+                count += inc;
+                counter.innerHTML = addCommas(count)
+                setTimeout(updateCount, 1);
+            } else {
+                counter.innerHTML = addCommas(target);
+            }
+        };
+        updateCount();
+    });
+}
+
+
+function addCommas(nStr) {
+    nStr += '';
+    x = nStr.split('.');
+    x1 = x[0];
+    x2 = x.length > 1 ? '.' + x[1] : '';
+    var rgx = /(\d+)(\d{3})/;
+    while (rgx.test(x1)) {
+        x1 = x1.replace(rgx, '$1' + ',' + '$2');
+    }
+    return x1 + x2;
+}
+
+
+var mySwiper = new Swiper('.swiper-container', {
+    speed: 400,
+    spaceBetween: 20,
+    centeredSlides: true,
+    centeredSlidesBounds: true,
+    slidesPerView: 'auto',
+    loopedSlides: 3,
+
+
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+
+    // If we need pagination
+    pagination: {
+        el: '.swiper-pagination',
+    },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+        el: '.swiper-scrollbar',
+    },
+})

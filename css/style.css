@@ -1,0 +1,863 @@
+:root {
+    --color-primario: #ff485a;
+    --color-primario-oscuro: #ee283c;
+}
+
+html {
+    font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.br-100 {
+    border-radius: 100%;
+}
+
+.header-page {
+    max-width: 1500px;
+    padding: 0 20px;
+}
+
+header {
+    height: 80px;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    background-color: #ff3254;
+    /* background-color: #e75b69; */
+}
+
+.navbar {
+    background-color: #ff3254;
+}
+
+.logo-img {
+    height: 62px;
+    /* background-color: aqua; */
+}
+
+.logo-img img {
+    height: 100%;
+    object-fit: contain;
+}
+
+.navbar-nav {
+    padding-left: 130px;
+}
+
+.a-link {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    /* color: black !important; */
+    color: white !important;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+
+.a-link i {
+    font-size: 30px;
+    margin-right: 5px;
+    color: #25d46e;
+}
+
+
+/********* VIDEO ********/
+
+#video-container {
+    height: calc(100vh - 80px);
+    min-height: 545px;
+    max-height: 620px;
+    position: relative;
+}
+
+#video-insert {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/******** INFO ********/
+
+#info-div {
+    position: relative;
+}
+
+#info-page-container {
+    position: absolute;
+    top: -310px;
+    left: 2px;
+}
+
+#info-page-content {
+    background: white;
+    width: 395px;
+    height: 340px;
+    padding: 20px 10px;
+    /* border-top-left-radius: 10px;
+    border-top-right-radius: 10px; */
+    border-radius: 10px;
+    /* box-shadow: -20px -20px 1px #ff6a6a; */
+    box-shadow: -20px -20px 1px var(--color-primario);
+}
+
+#info-page-content span {
+    color: rgb(32, 32, 32);
+    /* color: white; */
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+
+#info-page-content span:nth-child(1) {
+    margin-top: 30px;
+}
+
+#info-page-content h1 {
+    font-size: 2.1rem;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 30px;
+    color: rgb(0, 0, 0);
+    /* color: white; */
+}
+
+.div-button-info {
+    margin-top: 30px;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn-solicitar,
+.btn-informacion {
+    font-size: 0.9rem;
+    border-radius: 20px;
+    padding: 10px 15px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+.btn-solicitar {
+    background-color: var(--color-primario);
+    color: white;
+}
+
+.btn-solicitar:hover {
+    background-color: var(--color-primario-oscuro);
+    color: white;
+    box-shadow: 1px 1px 9px var(--color-primario);
+}
+
+.btn-informacion:hover {
+    /* background-color: #ff8843; */
+    color: var(--color-primario);
+    font-weight: bold;
+    /* box-shadow: 1px 1px 9px #ff8f4e; */
+}
+
+
+/******CLIENTES ******/
+
+#clientes-div {
+    padding: 20px 0;
+    background-color: #111111;
+}
+
+#clientes-container {
+    margin-top: 100px;
+    margin-bottom: 80px;
+}
+
+.clientes-titulo {
+    color: white;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#clientes-content {
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cliente {
+    width: 250px;
+    height: 170px;
+    /* background-color: aqua; */
+    display: inline-block;
+    margin: 10px;
+}
+
+.cliente img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/****** PERSONA *******/
+
+#person-container {
+    margin-top: 80px;
+}
+
+#person-content {
+    /* background-color: #58f16c; */
+    padding: 20px 50px;
+}
+
+#person-content h1,
+#person-content p {
+    font-size: 32px;
+    padding: 10px;
+    font-family: 'Raleway', sans-serif;
+}
+
+#person-content h2 {
+    font-size: 50px;
+    color: var(--color-primario-oscuro);
+}
+
+#person-content p span {
+    font-weight: bold;
+    color: var(--color-primario);
+}
+
+.person-estadis {
+    width: 400px;
+    /* height: 210px; */
+    margin: 30px auto 0 auto;
+}
+
+.person-estadis img {
+    width: 100%;
+    /* height: 100%; */
+    object-fit: cover;
+}
+
+#person-img-content {
+    /* background-color: brown; */
+    padding: 0px;
+    align-items: center;
+    display: flex;
+}
+
+#person-img {
+    width: 500px;
+    height: 490px;
+    /* background-color: aqua; */
+    margin: auto;
+}
+
+#person-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/****** BENEFICIOS ******/
+
+#beneficios-div {
+    background-image: url(https://www.prestamosperu.pe/wp-content/uploads/2020/11/money-from-peru-1-1.jpg);
+    background-position: center;
+    background-size: cover;
+    /* background-repeat: ; */
+}
+
+#beneficios-div-add {
+    background-color: rgba(255, 255, 255, 0.514);
+    padding: 10px 0;
+}
+
+#beneficios-container {
+    margin-top: 40px;
+    padding: 10px 20px;
+}
+
+.benef-cont-pregunta {
+    font-size: 1.4rem;
+    /* color: rgb(35, 156, 255);
+     */
+    color: var(--color-primario);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+.benef-cont-titulo {
+    font-size: 2.38rem;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(27, 27, 27);
+}
+
+.beneficios-content {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.beneficio {
+    width: 290px;
+    height: 300px;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 15px;
+    position: relative;
+}
+
+.beneficio-img {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.beneficio-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.beneficio-titulo {
+    position: absolute;
+    bottom: 0;
+    height: 105px;
+    background-color: rgba(0, 0, 0, 0.582);
+    width: 100%;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.beneficio-titulo h1 {
+    font-size: 1.2rem;
+    color: white;
+    width: 100%;
+    font-family: 'Hammersmith One', sans-serif;
+}
+
+.beneficio-info {
+    position: absolute;
+    top: 0;
+    /* background-color: rgba(0, 0, 0, 0.87); */
+    background-color: var(--color-primario);
+    /* background-color: white; */
+    height: 100%;
+    width: 100%;
+    display: none;
+    color: white;
+    /* color: black; */
+    padding: 10px 50px;
+    border-radius: 8px;
+}
+
+.beneficio:hover {
+    box-shadow: 0.5px 0.5px 4px black;
+}
+
+.beneficio:hover .beneficio-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/****** INFO NEGOCIO *******/
+
+#info-negocio-content {
+    margin: 55px 0 30px 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* background-color: #58f16c; */
+}
+
+.info-negocio {
+    min-width: 18rem;
+    /* background-color: #2d54ff; */
+    padding: 10px;
+    margin: 15px 0;
+}
+
+.info-negocio:nth-child(2) {
+    border-left: 2px solid rgb(202, 202, 202);
+    border-right: 2px solid rgb(202, 202, 202);
+}
+
+.info-negocio h1 {
+    font-size: 1.3rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: var(--color-primario);
+}
+
+.info-negocio-valor {
+    width: 11.5rem;
+    height: 11.5rem;
+    margin: auto;
+    margin-top: 5px;
+    /* background-color: #ff6a6a; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-star,
+.info-circle {
+    margin-top: 20px;
+}
+
+.info-star {
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.486);
+    border-radius: 10px;
+}
+
+.info-circle {
+    border-radius: 100%;
+    /* border: 6px solid rgb(29, 194, 98); */
+    border: 6px solid var(--color-primario);
+}
+
+.valor-star {
+    font-size: 3.5rem;
+}
+
+.icon-star {
+    color: #ffd82d;
+}
+
+.valor-circle {
+    font-size: 2.2rem;
+}
+
+
+/**** SWIPER JS *******/
+
+#swiper-usuario-container {
+    position: relative;
+    padding: 0px 20px;
+    /* background-color: #123aeb; */
+}
+
+#swiper-usuario-content {
+    /* background-color: #ff6a6a; */
+    margin: 40px 0 40px 0;
+    position: relative;
+    padding: 8px 0;
+}
+
+.swiper-container {
+    width: 90%;
+    height: 100%;
+    /* background-color: #123aeb; */
+}
+
+.swiper-pagination-bullets {
+    width: 100%;
+    bottom: -1.3rem;
+}
+
+.swiper-pagination-bullet {
+    margin: 0 0.7rem;
+    width: 0.7rem;
+    height: 0.7rem;
+    --swiper-theme-color: var(--color-primario);
+    opacity: 0.8;
+}
+
+.swiper-slide {
+    width: 31%;
+    min-height: 110px;
+    /* background-color: #58f16c; */
+}
+
+.card-img img {
+    width: 100%;
+    height: 100%;
+    /* border-radius: 1rem; */
+    object-fit: cover;
+}
+
+.card-img {
+    width: 100%;
+    height: 220px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card-title a {
+    font-size: 2rem;
+    margin-left: 10px;
+}
+
+.card-text {
+    font-family: 'Raleway', sans-serif;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    border-radius: 100%;
+    padding: 1rem;
+    border: 2px solid var(--color-primario);
+    --swiper-navigation-size: 1.15rem;
+    --swiper-theme-color: rgb(187, 76, 76);
+}
+
+.swiper-button-prev:before {
+    font-size: 2rem;
+}
+
+.swiper-button-prev {
+    left: 10px;
+}
+
+.swiper-button-next {
+    right: 10px;
+}
+
+
+/********** CONTACT **********/
+
+#contact-div {
+    background-color: #e63d4d;
+}
+
+#contact-container {
+    margin: 40px 0;
+    padding: 40px 20px;
+}
+
+#contact-info {
+    padding: 20px 30px;
+    /* background-color: #6f78a1; */
+}
+
+#contact-info h1 {
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+    color: #e4d33b;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#contact-info h2 {
+    font-size: 1.2rem;
+    margin-left: 10px;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+.contact-phone {
+    margin-top: 50px;
+}
+
+.contact-politica {
+    margin-top: 30px;
+}
+
+.contact-politica a {
+    color: #e4d33b;
+    text-decoration: underline;
+}
+
+#contact-form-container {
+    padding: 20px 50px;
+}
+
+#contact-form-container h1 {
+    font-size: 1.6rem;
+    color: #e4d33b;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#contact-form {
+    margin-top: 20px;
+}
+
+#contact-form input {
+    margin-bottom: 10px;
+    padding: 10px 20px;
+}
+
+#btn-form {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#btn-enviar {
+    margin-top: 15px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    background-color: var(--color-primario);
+    color: white;
+}
+
+#btn-enviar:hover {
+    background-color: var(--color-primario-oscuro);
+    box-shadow: 1px 1px 9px var(--color-primario);
+}
+
+
+/******* RESPALDOO ************/
+
+#respaldo-container {
+    margin: 30px 0;
+}
+
+#respaldo-img {
+    width: 400px;
+    /* background-color: #2d54ff; */
+    margin: 20px auto;
+}
+
+#respaldo-img img {
+    width: 100%;
+    object-fit: cover;
+}
+
+#respaldo-info {
+    padding: 10px 60px;
+}
+
+.parraf-respaldo {
+    margin-top: 30px;
+    font-size: 1.8rem;
+}
+
+.parraf-respaldo span {
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+}
+
+.parraf-movil {
+    display: none;
+    font-family: 'Raleway', sans-serif;
+}
+
+.btn-consultora {
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-size: 1rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    background-color: var(--color-primario);
+    color: white;
+}
+
+.btn-consultora:hover {
+    background-color: var(--color-primario-oscuro);
+    color: white;
+    box-shadow: 1px 1px 9px var(--color-primario);
+}
+
+@media (max-width:991px) {
+    /******** HEADER ********/
+    .navbar-nav {
+        padding-left: 0;
+        margin: 20px 0;
+    }
+    .navbar-nav li {
+        display: inline-block;
+        text-align: center;
+        margin: 15px 0;
+    }
+    .a-link {
+        justify-content: center;
+        font-size: 1.3rem;
+    }
+    /******* VIDEO *******/
+    #video-container {
+        height: calc(100vh - 80px);
+        min-height: 400px;
+        max-height: 420px;
+    }
+    /******** INFO ********/
+    #info-page-container {
+        position: relative;
+        top: 0px;
+        left: 0px;
+        padding: 30PX 10PX;
+    }
+    #info-page-content {
+        background: rgb(255, 206, 206);
+        width: 270px;
+        height: auto;
+        padding: 10px;
+        margin: auto;
+    }
+    #info-page-content span {
+        font-size: 1rem;
+    }
+    #info-page-content span:nth-child(1) {
+        margin-top: 20px;
+    }
+    #info-page-content h1 {
+        font-size: 1.6rem;
+        margin-top: 20px;
+    }
+    .div-button-info {
+        margin-top: 10px;
+        padding: 10px;
+        display: block;
+    }
+    .btn-solicitar,
+    .btn-informacion {
+        width: 80%;
+        padding: 10px 15px;
+        display: block;
+        margin: 10px auto 15px auto;
+    }
+    /******CLIENTES ******/
+    #clientes-div {
+        padding: 10px 0;
+    }
+    #clientes-container {
+        margin-top: 80px;
+        margin-bottom: 60px;
+    }
+    #clientes-content {
+        margin-top: 40px;
+    }
+    /******** PERSONA*********/
+    #person-container {
+        margin-top: 50px;
+    }
+    #person-content {
+        padding: 20px;
+    }
+    .person-estadis {
+        width: 80%;
+        min-width: 240px;
+        /* height: 210px; */
+        margin: 30px auto 0 auto;
+    }
+    #person-img {
+        width: 100%;
+        height: 380px;
+    }
+    /******BENEFICIOS ******/
+    #beneficios-container {
+        margin-top: 30px;
+    }
+    .benef-cont-pregunta {
+        font-size: 1.2rem;
+    }
+    .benef-cont-titulo {
+        font-size: 2.2rem;
+    }
+    /****** INFO NEGOCIO *******/
+    #info-negocio-content {
+        margin-top: 40px;
+    }
+    .info-negocio {
+        min-width: 20rem;
+    }
+    .info-negocio:nth-child(2) {
+        border: 0px;
+    }
+    .info-negocio h1 {
+        font-size: 1.6rem;
+    }
+    .info-negocio-valor {
+        width: 14.5rem;
+        height: 14.5rem;
+    }
+    .valor-star {
+        font-size: 4.5rem;
+    }
+    .valor-circle {
+        font-size: 2.8rem;
+    }
+    /*********** SWIPER **********/
+    #swiper-usuario-container {
+        padding: 0;
+        margin-bottom: 25px;
+    }
+    .swiper-container {
+        width: 80%;
+    }
+    .swiper-slide {
+        width: 90%;
+        min-height: 120px;
+        /* background-color: #58f16c; */
+    }
+    .card-img {
+        height: 250px;
+    }
+    .swiper-button-prev {
+        left: 0px;
+    }
+    .swiper-button-next {
+        right: 0px;
+    }
+    /*******CONTACT********/
+    #contact-container {
+        margin: 20px 0;
+    }
+    #contact-info {
+        padding: 20px 0;
+    }
+    #contact-form-container {
+        padding: 20px 0;
+    }
+    #btn-form {
+        display: block;
+    }
+    #btn-enviar {
+        width: 100%;
+        margin-top: 20px;
+    }
+    /********* RESPALDO ************/
+    #respaldo-img {
+        width: 270px;
+    }
+    .parraf-movil {
+        display: block;
+    }
+    .parraf-web {
+        display: none;
+    }
+    .btn-consultora {
+        margin-top: 0px;
+    }
+}
+
+.scale {
+    animation: scale 0.5s ease both;
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(0.6);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
