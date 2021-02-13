@@ -47,7 +47,7 @@ function scrollY() {
 
 function contador() {
     const counters = document.querySelectorAll('.counter');
-    const speed = 200;
+    const speed = 400;
     let count = 0;
     counters.forEach(counter => {
         const updateCount = () => {

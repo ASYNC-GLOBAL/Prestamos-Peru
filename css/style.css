@@ -225,11 +225,6 @@ a {
     background-color: var(--color-primario);
 }
 
-#clientes-container {
-    /* margin-top: 10px;
-    margin-bottom: 10px; */
-}
-
 .clientes-titulo {
     font-size: 1.2rem;
     margin-top: 10px;
