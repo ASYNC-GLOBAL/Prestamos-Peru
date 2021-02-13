@@ -37,35 +37,45 @@
 
 <body>
 
-    <header>
-        <nav class="container-lg navbar navbar-expand-lg navbar-light ">
-            <div class="container-fluid">
+    <header id="header">
+        <nav class="container-xl navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid" id="nav-container">
                 <a class="navbar-brand logo-img" href="#">
                     <img src="assets/img/logo-png-casa-peruana-hd-1-1024x289.png" alt="">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-                <div class="collapse navbar-collapse  justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav w-100 justify-content-around">
-                        <li class="nav-item mx-2 ">
-                            <a class="nav-link a-link active" aria-current="page" href="#">NOTICIAS INTERESANTES</a>
+                <div class="collapse navbar-collapse  justify-content-end " id="navbarNav">
+                    <ul class="navbar-nav w-100 justify-content-around ">
+                        <li class="nav-item  mx-2 ">
+                            <a class="nav-link a-link" href="index.html">
+                                HOME
+                            </a>
                         </li>
                         <li class="nav-item  mx-2 ">
                             <a class="nav-link a-link" href="#">
-                                <i aria-hidden="true" class="fab fa-whatsapp"></i>991196401
+                                NOSOTROS
                             </a>
                         </li>
                         <li class="nav-item mx-2 ">
+                            <a class="nav-link a-link active" aria-current="page" href="#">NOTICIAS INTERESANTES</a>
+                        </li>
+
+
+
+                        <li class="nav-item  mx-2 ">
+                            <a class="nav-link a-link" href="centroAyuda.html">
+                                CENTRO DE CONTACTO
+                            </a>
+                        </li>
+                        <li class="nav-item  mx-2 ">
                             <a class="nav-link a-link" href="#">
-                                <i aria-hidden="true" class="fab fa-whatsapp"></i>954832250
+                                PREGUNTAS FRECUENTES
                             </a>
                         </li>
-                        <li class="nav-item mx-2  ">
-                            <a class="nav-link a-link " href="#" tabindex="-1">
-                                <i aria-hidden="true" class="fab fa-whatsapp"></i> 996943972
-                            </a>
-                        </li>
+
+
                     </ul>
                 </div>
             </div>
@@ -74,14 +84,13 @@
 
     <main class="container-fluid   px-0">
 
-        <div id="video-container">
+        <div id="mask-container">
 
 
-            <video src="assets/video/Testimonio CasaPeruanadeCredito.mp4" type="video/mp4" autoplay muted loop id="video-insert"></video>
+            <img src="assets/img/a3.jpg" alt="" class="mask-img">
 
 
-        </div>
-        <div class="container-lg " id="info-div">
+
             <div id="info-page-container">
                 <div id="info-page-content">
                     <span class=" d-block ">VERIFICA SI TIENES</span>
@@ -94,11 +103,26 @@
 
                 </div>
             </div>
+
         </div>
+        <!-- <div class="container-lg " id="info-div">
+            <div id="info-page-container">
+                <div id="info-page-content">
+                    <span class=" d-block ">VERIFICA SI TIENES</span>
+                    <span class="d-block ">UN PRÉSTAMO</span>
+                    <h1 class="d-block ">PRE APROBADO</h1>
+                    <div class="div-button-info ">
+                        <a href=" " class="btn btn-solicitar ">SOLICITA AQUÍ</a>
+                        <a href=" " class="btn btn-informacion ">MÁS INFORMACIÓN</a>
+                    </div>
+
+                </div>
+            </div>
+        </div> -->
 
 
         <div id="clientes-div">
-            <div class="container-lg ">
+            <div class="container-xl ">
                 <div class="row mx-0 " id="clientes-container">
                     <div class="col-12 px-0 ">
                         <h1 class="clientes-titulo text-center ">NUESTROS CLIENTES</h1>
@@ -123,7 +147,7 @@
         </div>
 
 
-        <div class="container-lg px-0 ">
+        <div class="container-xl px-0 ">
             <div class="row mx-0 " id="person-container">
                 <div class="col-12 col-lg-6 " id="person-content">
                     <h1 class="text-center ">ÚNETE A LOS MÁS DE</h1>
@@ -149,7 +173,7 @@
 
         <div id="beneficios-div">
             <div id="beneficios-div-add">
-                <div class="container-lg">
+                <div class="container-xl">
                     <div class="row mx-0" id="beneficios-container">
                         <div class="col-12 px-0">
                             <h1 class="benef-cont-pregunta text-center">¿ QUÉ OFRECEMOS ?</h1>
@@ -253,8 +277,8 @@
 
         </div>
 
-        <div class=" ">
-            <div class="container-lg">
+        <div>
+            <div class="container-xl">
                 <div class="row mx-0 " id="info-negocio-container">
                     <div class="col-12 " id="info-negocio-content">
                         <div class="info-negocio col-lg-4">
@@ -285,7 +309,7 @@
 
 
         <div>
-            <div class="container-lg">
+            <div class="container-xl">
                 <div class="row mx-0" id="swiper-usuario-container">
                     <div id="swiper-usuario-content">
 
@@ -380,39 +404,30 @@
         </div>
 
         <div id="contact-div">
-            <div class="container-lg py-2">
+            <div class="container-xxl px-0">
                 <div class="row mx-0 " id="contact-container">
-                    <div class="col-12 col-lg-6 " id="contact-info">
-                        <div class=" ">
-                            <h1>Location</h1>
-                            <h2><i class="fas fa-home me-2 "></i>Av. Baltazar La Torre 830 - San Isidro</h2>
-                            <h2><i class="fas fa-home me-2 "></i> Venezuela 625, oficina 606 – Breña</h2>
-                        </div>
-                        <div class=" contact-phone">
-                            <h1>Cell Phone</h1>
-                            <h2><i class="fas fa-mobile-alt"></i> (01) 757 3298</h2>
-                        </div>
-                        <h1 class="contact-politica ">
-                            <a href=" "> Políticas de Privacidad</a></h1>
-                    </div>
-                    <div class="col-12 col-lg-6 " id="contact-form-container">
-                        <h1>Contact Form</h1>
-                        <form action=" " id="contact-form">
-                            <input type="text" class="form-control" placeholder="Ingresa tu nombre">
-                            <input type="text" class="form-control" placeholder="Ingresa tu email">
-                            <textarea rows="6" class="form-control" placeholder="Ingresa tu mensaje"></textarea>
-                            <div id="btn-form">
-                                <button class="btn " id="btn-enviar">Enviar</button>
-                            </div>
 
-                        </form>
+                    <div class="col-12 col-lg-6" id="contact-content">
+                        <div id="contact-info">
+
+                            <h1 class="text-center">¿ Necesitas Ayuda ?</h1>
+                            <p class="text-center">Contamos con un centro de atencion disponible donde nos centramos sólo en ti y en tus necesidades. Lo mas importante para nosotros es que te sientas como en familia y por eso demostramos pasión en la calidad a tu servicio.
+                            </p>
+                            <div id="btn-ayuda-content">
+                                <a href="centroAyuda.html" class="btn btn-ayuda mx-auto ">Centro de Contacto</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-12 col-lg-6 px-0" id="contact-img">
+                        <img src="assets/img/contacme.jpg" alt="">
                     </div>
                 </div>
             </div>
         </div>
 
 
-        <div>
+        <div id="respaldo-div">
             <div class="container py-2">
                 <div class="row " id="respaldo-container">
                     <div class="col-12 col-lg-6 py-2">
@@ -435,9 +450,73 @@
             </div>
         </div>
 
+
+
     </main>
 
+    <footer class="container-fluid px-0">
+        <div class="container-xl">
+            <div class="row mx-0" id="footer-menu">
+                <div class="col-12 col-lg-4">
+                    <h1>Acerca de la Empresa</h1>
+                    <ul class="footer-list-menu">
+                        <li>
+                            <a href="">Nosotros</a>
+                        </li>
+                        <li>
+                            <a href="">Noticias Interesantes</a>
+                        </li>
+                        <li>
+                            <a href="">Centro de Contacto</a>
+                        </li>
+                        <li>
+                            <a href="">Pregutas Fecuentes</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <h1>Politicas y Terminos</h1>
+                    <ul class="footer-list-menu">
+                        <li>
+                            <a href="">Politica de Privacidad</a>
+                        </li>
+                        <li>
+                            <a href="">Politica de Seguridad|</a>
+                        </li>
+                        <li>
+                            <a href="">Terminos y Condiciones</a>
+                        </li>
 
+                        <li>
+                            <a href="">Pregutas Fecuentes</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <h1>Contactanos</h1>
+                    <ul class="footer-list-menu">
+                        <li>
+                            <i class="fas fa-home me-2 "></i>Av. Baltazar La Torre 830 - San Isidro
+                        </li>
+                        <li>
+                            <i class="fas fa-home me-2 "></i>Venezuela 625, oficina 606 – Breña
+                        </li>
+                        <li>
+                            <i class="fas fa-mobile-alt me-2"></i> (01) 757 3298</h2>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="row mx-0" id="footer-copy">
+            <div class="col-12 px-0">
+                <h1 class="text-center">&copy;2021 ASYNC - Todos los derechos reservados</h1>
+            </div>
+        </div>
+    </footer>
 
 
     <!-- BOOTSTRAP -->
@@ -447,6 +526,7 @@
     <!-- SWIPER JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
 
+    <script src="js/header.js"></script>
     <script src="js/index.js"></script>
 </body>
 

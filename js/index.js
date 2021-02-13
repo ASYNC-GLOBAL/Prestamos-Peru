@@ -1,8 +1,49 @@
+let infoNegocioContainer = document.getElementById('info-negocio-container')
+let infoNegocioValor = document.querySelectorAll('.info-negocio-valor')
+let personContainer = document.getElementById('person-container');
+let flagContador = false;
+
+
 eventFunction();
 
+
 function eventFunction() {
-    document.addEventListener("DOMContentLoaded", contador)
+    window.addEventListener('scroll', scrollPersonaContador)
+    window.addEventListener('scroll', scrollInfoNegocio)
 }
+
+
+
+function scrollPersonaContador() {
+    let scrollPersonContainer = personContainer.offsetTop;
+    if (scrollPersonContainer - 450 < scrollY()) {
+        if (flagContador != true) {
+            contador();
+            flagContador = true;
+        }
+
+    }
+}
+
+function scrollInfoNegocio() {
+
+    for (let i = 0; i < infoNegocioValor.length; i++) {
+        scrollInfoNegocioValor = infoNegocioValor[i].offsetTop
+        if (scrollInfoNegocioValor - 600 < scrollY()) {
+            infoNegocioValor[i].style.opacity = 1
+            infoNegocioValor[i].classList.add('slide-scale');
+        }
+    }
+}
+
+
+function scrollY() {
+    return document.documentElement.scrollTop;
+}
+
+
+
+/********** CONTADOR PARA EL NUMERO DE CLIENTES********** */
 
 function contador() {
     const counters = document.querySelectorAll('.counter');
@@ -37,6 +78,7 @@ function addCommas(nStr) {
     return x1 + x2;
 }
 
+/* SWIPER */
 
 var mySwiper = new Swiper('.swiper-container', {
     speed: 400,
