@@ -1,5 +1,8 @@
 let infoNegocioContainer = document.getElementById('info-negocio-container')
 let infoNegocioValor = document.querySelectorAll('.info-negocio-valor')
+const beneficiosDiv = document.getElementById('beneficios-div');
+const personDiv = document.getElementById('person-div');
+const usuariosDiv = document.getElementById('swiper-usuarios-div');
 let personContainer = document.getElementById('person-container');
 let flagContador = false;
 
@@ -36,6 +39,20 @@ function scrollInfoNegocio() {
     }
 }
 
+function nostrosScroll() {
+    let scrollPersonDiv = personDiv.offsetTop;
+    document.documentElement.scrollTop = scrollPersonDiv - 80;
+}
+
+function beneficiosScroll() {
+    let scrollBeneficiosDiv = beneficiosDiv.offsetTop;
+    document.documentElement.scrollTop = scrollBeneficiosDiv - 80;
+}
+
+function confiaronNosotrosScroll() {
+    let scrollUsuariosDiv = usuariosDiv.offsetTop;
+    document.documentElement.scrollTop = scrollUsuariosDiv - 80;
+}
 
 function scrollY() {
     return document.documentElement.scrollTop;

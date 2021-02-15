@@ -26,6 +26,9 @@
     <link rel="stylesheet" href="css/style.css">
 
 
+
+
+
     <title>Centro de Ayuda</title>
 </head>
 
@@ -47,12 +50,12 @@
                             </a>
                         </li>
                         <li class="nav-item  mx-2 ">
-                            <a class="nav-link a-link" href="#">
+                            <a class="nav-link a-link" href="index.html">
                                 NOSOTROS
                             </a>
                         </li>
                         <li class="nav-item mx-2 ">
-                            <a class="nav-link a-link active" aria-current="page" href="#">NOTICIAS INTERESANTES</a>
+                            <a class="nav-link a-link active" aria-current="page" href="index.html">¿QUÉ OFRECEMOS?</a>
                         </li>
 
 
@@ -63,8 +66,8 @@
                             </a>
                         </li>
                         <li class="nav-item  mx-2 ">
-                            <a class="nav-link a-link" href="#">
-                                PREGUNTAS FRECUENTES
+                            <a class="nav-link a-link" href="index.html">
+                                CONFIARON EN NOSOTROS
                             </a>
                         </li>
 
@@ -197,6 +200,42 @@
 
 
     <script src="js/header.js"></script>
+
+    <!-- GetButton.io widget -->
+
+    <script type="text/javascript">
+        (function() {
+
+            var options = {
+
+                facebook: "115628790357261", // Facebook page ID
+
+                call_to_action: "Ayuda personalizada", // Call to action
+
+                position: "right", // Position may be 'right' or 'left'
+
+            };
+
+            var proto = document.location.protocol,
+                host = "getbutton.io",
+                url = proto + "//static." + host;
+
+            var s = document.createElement('script');
+            s.type = 'text/javascript';
+            s.async = true;
+            s.src = url + '/widget-send-button/js/init.js';
+
+            s.onload = function() {
+                WhWidgetSendButton.init(host, proto, options);
+            };
+
+            var x = document.getElementsByTagName('script')[0];
+            x.parentNode.insertBefore(s, x);
+
+        })();
+    </script>
+
+    <!-- /GetButton.io widget -->
 
 </body>
 

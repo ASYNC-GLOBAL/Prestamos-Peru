@@ -32,6 +32,10 @@
 
     <link rel="stylesheet" href="css/style.css">
 
+
+
+
+
     <title>Préstamos Perú</title>
 </head>
 
@@ -54,12 +58,12 @@
                             </a>
                         </li>
                         <li class="nav-item  mx-2 ">
-                            <a class="nav-link a-link" href="#">
+                            <a class="nav-link a-link" onclick="nostrosScroll()">
                                 NOSOTROS
                             </a>
                         </li>
                         <li class="nav-item mx-2 ">
-                            <a class="nav-link a-link active" aria-current="page" href="#">NOTICIAS INTERESANTES</a>
+                            <a class="nav-link a-link active" aria-current="page" onclick="beneficiosScroll()">¿QUÉ OFRECEMOS?</a>
                         </li>
 
 
@@ -70,8 +74,8 @@
                             </a>
                         </li>
                         <li class="nav-item  mx-2 ">
-                            <a class="nav-link a-link" href="#">
-                                PREGUNTAS FRECUENTES
+                            <a class="nav-link a-link" onclick="confiaronNosotrosScroll()">
+                                CONFIARON EN NOSOTROS
                             </a>
                         </li>
 
@@ -105,20 +109,6 @@
             </div>
 
         </div>
-        <!-- <div class="container-lg " id="info-div">
-            <div id="info-page-container">
-                <div id="info-page-content">
-                    <span class=" d-block ">VERIFICA SI TIENES</span>
-                    <span class="d-block ">UN PRÉSTAMO</span>
-                    <h1 class="d-block ">PRE APROBADO</h1>
-                    <div class="div-button-info ">
-                        <a href=" " class="btn btn-solicitar ">SOLICITA AQUÍ</a>
-                        <a href=" " class="btn btn-informacion ">MÁS INFORMACIÓN</a>
-                    </div>
-
-                </div>
-            </div>
-        </div> -->
 
 
         <div id="clientes-div">
@@ -147,12 +137,10 @@
         </div>
 
 
-        <div class="container-xl px-0 ">
+        <div class="container-xl  " id="person-div">
             <div class="row mx-0 " id="person-container">
                 <div class="col-12 col-lg-6 " id="person-content">
                     <h1 class="text-center ">ÚNETE A LOS MÁS DE</h1>
-
-                    <!-- <h2 class="elementor-counter-number " data-duration="2000 " data-to-value="1550000 " data-from-value="0 " data-delimiter=", ">1,550,000</h2> -->
 
                     <h2 class=" text-center counter" data-target="1550000">0</h2>
 
@@ -308,7 +296,7 @@
         </div>
 
 
-        <div>
+        <div id="swiper-usuarios-div">
             <div class="container-xl">
                 <div class="row mx-0" id="swiper-usuario-container">
                     <div id="swiper-usuario-content">
@@ -430,19 +418,25 @@
         <div id="respaldo-div">
             <div class="container py-2">
                 <div class="row " id="respaldo-container">
-                    <div class="col-12 col-lg-6 py-2">
-                        <p class="text-center parraf-respaldo parraf-movil">Contamos con el respaldo de <br>
-                            <span>Bringas & Asociados</span></p>
-                        <div id="respaldo-img">
-                            <img src="assets/img/consultora.png" alt=" ">
+                    <div class="col-12 col-lg-6 py-2" id="respaldo-img">
+                        <div>
+                            <p class="text-center parraf-respaldo parraf-movil">Contamos con el respaldo de <br>
+                                <span>Bringas & Asociados</span></p>
+                            <div id="empresa-img">
+                                <img src="assets/img/consultora.png" alt=" ">
+                            </div>
                         </div>
+
                     </div>
-                    <div class="col-12 col-lg-6" id="respaldo-info">
-                        <p class="text-center parraf-respaldo parraf-web">Contamos con el respaldo de <br>
-                            <span>Bringas & Asociados</span></p>
-                        <div class="d-flex justify-content-center">
-                            <a href="http://wa.me/51996943972" class="btn-consultora btn mx-auto ">Consultoria Legal  Gratuita</a>
+                    <div class="col-12 col-lg-6 " id="respaldo-info">
+                        <div>
+                            <p class="text-center parraf-respaldo parraf-web">Contamos con el respaldo de <br>
+                                <span>Bringas & Asociados</span></p>
+                            <div class="d-flex justify-content-center">
+                                <a href="http://wa.me/51996943972" class="btn-consultora btn mx-auto ">Consultoria Legal  Gratuita</a>
+                            </div>
                         </div>
+
                     </div>
 
                 </div>
@@ -528,6 +522,43 @@
 
     <script src="js/header.js"></script>
     <script src="js/index.js"></script>
+
+
+    <!-- GetButton.io widget -->
+
+    <script type="text/javascript">
+        (function() {
+
+            var options = {
+
+                facebook: "115628790357261", // Facebook page ID
+
+                call_to_action: "Ayuda personalizada", // Call to action
+
+                position: "right", // Position may be 'right' or 'left'
+
+            };
+
+            var proto = document.location.protocol,
+                host = "getbutton.io",
+                url = proto + "//static." + host;
+
+            var s = document.createElement('script');
+            s.type = 'text/javascript';
+            s.async = true;
+            s.src = url + '/widget-send-button/js/init.js';
+
+            s.onload = function() {
+                WhWidgetSendButton.init(host, proto, options);
+            };
+
+            var x = document.getElementsByTagName('script')[0];
+            x.parentNode.insertBefore(s, x);
+
+        })();
+    </script>
+
+    <!-- /GetButton.io widget -->
 </body>
 
 </html>

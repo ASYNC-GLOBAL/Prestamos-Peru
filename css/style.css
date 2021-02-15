@@ -74,6 +74,7 @@ a {
     color: white !important;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
+    cursor: pointer;
 }
 
 .a-link:hover {
@@ -257,8 +258,13 @@ a {
 
 /****** PERSONA *******/
 
+#person-div {
+    padding: 1px 0;
+}
+
 #person-container {
-    margin-top: 80px;
+    margin-top: 70px;
+    margin-bottom: 20px;
 }
 
 #person-content {
@@ -659,23 +665,29 @@ a {
     margin: 20px 0 10px 0;
 }
 
-#respaldo-img {
+#empresa-img {
     width: 400px;
     /* background-color: #2d54ff; */
     margin: 20px auto;
 }
 
-#respaldo-img img {
+#empresa-img img {
     width: 100%;
     object-fit: cover;
 }
 
+#respaldo-img,
 #respaldo-info {
-    padding: 10px 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#respaldo-info {
+    padding: 0px 60px;
 }
 
 .parraf-respaldo {
-    margin-top: 30px;
     font-size: 1.8rem;
 }
 
@@ -693,7 +705,7 @@ a {
 .btn-consultora {
     padding: 10px 20px;
     border-radius: 10px;
-    margin-top: 20px;
+    margin-top: 10px;
     font-size: 1rem;
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
@@ -920,6 +932,7 @@ footer {
     /******** PERSONA*********/
     #person-container {
         margin-top: 50px;
+        margin-bottom: 0;
     }
     #person-content {
         padding: 20px;
@@ -1003,7 +1016,7 @@ footer {
     #respaldo-container p {
         font-size: 1.5rem;
     }
-    #respaldo-img {
+    #empresa-img {
         width: 270px;
     }
     .parraf-movil {
