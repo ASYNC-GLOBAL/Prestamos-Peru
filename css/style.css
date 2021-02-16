@@ -728,12 +728,13 @@ footer {
     color: rgb(214, 214, 214);
 }
 
-#frame-fb-content {
+
+/* #frame-fb-content {
     width: 100%;
     max-width: 400px;
     height: 200px;
     margin: auto;
-}
+} */
 
 
 /********** VISTA CENTRO DE AYUDA ************/
@@ -1036,12 +1037,12 @@ footer {
     #footer-copy h1 {
         font-size: 0.7rem;
     }
-    #frame-fb-content {
+    /* #frame-fb-content {
         width: 90%;
         max-width: 460px;
         height: 160px;
         margin: 0;
-    }
+    } */
     /********** VISTA CENTRO DE AYUDA************/
     /*******CENTRO AYUDA********/
     #centroAyuda-container {
