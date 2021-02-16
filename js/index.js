@@ -40,24 +40,24 @@ function scrollInfoNegocio() {
 }
 
 function nostrosScroll() {
-    let scrollPersonDiv = personDiv.offsetTop;
-    document.documentElement.scrollTop = scrollPersonDiv - 80;
+    setScrollY(personDiv.offsetTop);
 }
 
 function beneficiosScroll() {
-    let scrollBeneficiosDiv = beneficiosDiv.offsetTop;
-    document.documentElement.scrollTop = scrollBeneficiosDiv - 80;
+    setScrollY(beneficiosDiv.offsetTop);
 }
 
 function confiaronNosotrosScroll() {
-    let scrollUsuariosDiv = usuariosDiv.offsetTop;
-    document.documentElement.scrollTop = scrollUsuariosDiv - 80;
+    setScrollY(usuariosDiv.offsetTop);
 }
 
 function scrollY() {
     return document.documentElement.scrollTop;
 }
 
+function setScrollY(distancia) {
+    document.documentElement.scrollTop = distancia - 80;
+}
 
 
 /********** CONTADOR PARA EL NUMERO DE CLIENTES********** */
@@ -96,7 +96,6 @@ function addCommas(nStr) {
 }
 
 /* SWIPER */
-
 var mySwiper = new Swiper('.swiper-container', {
     speed: 400,
     spaceBetween: 20,
@@ -119,10 +118,5 @@ var mySwiper = new Swiper('.swiper-container', {
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
-    },
-
-    // And if we need scrollbar
-    scrollbar: {
-        el: '.swiper-scrollbar',
     },
 })
