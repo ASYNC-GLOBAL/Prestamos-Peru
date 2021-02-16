@@ -943,6 +943,9 @@ footer {
         height: 380px;
     }
     /******BENEFICIOS ******/
+    #beneficios-div {
+        background-image: url(../assets/img/fondo-beneficios-300.webp);
+    }
     #beneficios-container {
         margin-top: 30px;
     }
