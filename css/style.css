@@ -155,7 +155,6 @@ li a {
     font-family: 'Montserrat', sans-serif;
     margin-top: 15px;
     color: var(--color-primario);
-    /* color: white; */
 }
 
 .div-button-info {
@@ -186,10 +185,8 @@ li a {
 }
 
 .btn-informacion:hover {
-    /* background-color: #ff8843; */
     color: var(--color-primario);
     font-weight: bold;
-    /* box-shadow: 1px 1px 9px #ff8f4e; */
 }
 
 #video-page-content {
